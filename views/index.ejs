@@ -25,7 +25,20 @@
         </svg>
     </div>
 
-    <script type="text/javascript" src="../index.js"></script>
+    <script type="text/javascript">
+        let number = document.getElementById('number');
+        let counter = 0;
+
+        setInterval(() => {
+            if (counter == 65)
+                clearInterval();
+            else{
+                counter += 1;
+                number.innerHTML = counter + "%";
+            }
+        }, 30)
+
+    </script>
     
 </body>
 </html>
